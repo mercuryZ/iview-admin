@@ -108,6 +108,22 @@ export default [
     component: Main,
     children: [
       {
+        path: 'publishorder',
+        name: 'publishorder',
+        meta: {
+          title: 'publishorder'
+        },
+        component: () => import('@/view/components/publishorder/publishorder.vue')
+      },
+      {
+        path: 'intowarehouse',
+        name: 'intowarehouse',
+        meta: {
+          title: 'intowarehouse'
+        },
+        component: () => import('@/view/components/intowarehouse/intowarehouse.vue')
+      },
+      {
         path: 'tree_select_page',
         name: 'tree_select_page',
         meta: {
