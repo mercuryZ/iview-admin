@@ -44,5 +44,28 @@ export default {
   drag_drawer_page: '可拖动抽屉',
   tree_select_page: '树状下拉选择器',
   intowarehouse: '入库管理',
-  publishorder: '发布订单'
+  publishorder: '发布订单',
+
+  providers: '供应商管理',
+  provider_dig: '量化评价',
+  provider_ana: '模糊评价',
+  purchase: '采购管理',
+  purchase_plan: '采购计划',
+  purchase_order: '采购订单',
+  purchase_audit: '采购审批',
+  inventory: '库存管理',
+  inventory_plan: '入库申请',
+  inventory_order: '库存详情',
+  inventory_audit: '库存审批',
+  sale: '销售管理',
+  sale_plan: '销售计划',
+  sale_order: '销售订单',
+  sale_audit: '销售审批',
+  contracts: '智能合约',
+  contract_item: '合约管理',
+  contract_publish: '合约发布',
+  contract_list: '合约查看',
+  system_user: '用户信息',
+  user_manage: '用户管理'
+
 }

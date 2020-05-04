@@ -51,30 +51,196 @@ export default [
     ]
   },
   {
-    path: '',
-    name: 'doc',
+    path: '/providers',
+    name: 'providers',
     meta: {
-      title: '文档',
-      href: 'https://lison16.github.io/iview-admin-doc/#/',
-      icon: 'ios-book'
-    }
+      icon: 'md-people',
+      title: 'providers'
+    },
+    component: Main,
+    children: [
+      {
+        path: 'provider_dig',
+        name: 'provider_dig',
+        meta: {
+          icon: 'ios-paper',
+          title: 'provider_dig'
+        },
+        component: () => import('@/view/purchase/publishorder/publishorder.vue')
+      },
+      {
+        path: 'provider_ana',
+        name: 'provider_ana',
+        meta: {
+          icon: 'ios-options',
+          title: 'provider_ana'
+        },
+        component: () => import('@/view/purchase/publishorder/publishorder.vue')
+      }
+    ]
   },
   {
-    path: '/join',
-    name: 'join',
+    path: '/purchase',
+    name: 'purchase',
+    meta: {
+      icon: 'ios-folder-open',
+      title: '采购管理'
+    },
+    component: Main,
+    children: [
+      {
+        path: 'purchase_plan',
+        name: 'purchase_plan',
+        meta: {
+          icon: 'ios-paper',
+          title: 'purchase_plan'
+        },
+        component: () => import('@/view/purchase/publishorder/publishorder.vue')
+      },
+      {
+        path: 'purchase_order',
+        name: 'purchase_order',
+        meta: {
+          icon: 'ios-options',
+          title: 'purchase_order'
+        },
+        component: () => import('@/view/purchase/publishorder/publishorder.vue')
+      },
+      {
+        path: 'purchase_audit',
+        name: 'purchase_audit',
+        meta: {
+          icon: 'ios-paper-plane',
+          title: 'purchase_audit'
+        },
+        component: () => import('@/view/purchase/publishorder/publishorder.vue')
+      }
+    ]
+  },
+  {
+    path: '/inventory',
+    name: 'inventory',
     component: Main,
     meta: {
-      hideInBread: true
+      icon: 'md-archive',
+      title: '库存管理'
     },
     children: [
       {
-        path: 'join_page',
-        name: 'join_page',
+        path: 'inventory_plan',
+        name: 'inventory_plan',
         meta: {
-          icon: '_qq',
-          title: 'QQ群'
+          icon: 'ios-paper',
+          title: '入库申请'
+        }
+      },
+      {
+        path: 'inventory_order',
+        name: 'inventory_order',
+        meta: {
+          icon: 'ios-options',
+          title: '库存详情'
+        }
+      },
+      {
+        path: 'inventory_audit',
+        name: 'inventory_audit',
+        meta: {
+          icon: 'ios-paper-plane',
+          title: '库存审批'
+        }
+      }
+    ]
+  },
+  {
+    path: '/sale',
+    name: 'sale',
+    component: Main,
+    meta: {
+      icon: 'ios-albums',
+      title: '销售管理'
+    },
+    children: [
+      {
+        path: 'sale_plan',
+        name: 'sale_plan',
+        meta: {
+          icon: 'ios-paper',
+          title: '销售计划'
+        }
+      },
+      {
+        path: 'sale_order',
+        name: 'sale_order',
+        meta: {
+          icon: 'ios-options',
+          title: '销售订单'
+        }
+      },
+      {
+        path: 'sale_audit',
+        name: 'sale_audit',
+        meta: {
+          icon: 'ios-paper-plane',
+          title: '销售审批'
+        }
+      }
+    ]
+  },
+  {
+    path: '/contracts',
+    name: 'contracts',
+    meta: {
+      icon: 'ios-apps',
+      title: '合约管理'
+    },
+    component: Main,
+    children: [
+      {
+        path: 'contract_item',
+        name: 'contract_item',
+        meta: {
+          icon: 'ios-paper',
+          title: 'contract_item'
         },
-        component: () => import('@/view/join-page.vue')
+        component: () => import('@/view/purchase/publishorder/publishorder.vue')
+      },
+      {
+        path: 'contract_publish',
+        name: 'contract_publish',
+        meta: {
+          icon: 'ios-options',
+          title: 'contract_publish'
+        },
+        component: () => import('@/view/purchase/publishorder/publishorder.vue')
+      },
+      {
+        path: 'contract_list',
+        name: 'contract_list',
+        meta: {
+          icon: 'ios-paper-plane',
+          title: 'contract_list'
+        },
+        component: () => import('@/view/purchase/publishorder/publishorder.vue')
+      }
+    ]
+  },
+  {
+    path: '/system_user',
+    name: 'system_user',
+    component: Main,
+    meta: {
+      icon: 'ios-paper-plane',
+      title: 'system_user'
+    },
+    children: [
+      {
+        path: 'user_manage',
+        name: 'user_manage',
+        meta: {
+          icon: 'ios-purchase',
+          title: 'user_manage'
+        }
       }
     ]
   },
